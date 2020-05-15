@@ -9,6 +9,14 @@ Currently supports the STM32F3-Series
 
 The Driver is Located in Folder <kbd>Library/GPIO</kbd>. LENTIA-GPIO is part of a larger Project hence the structure.
 
+Set the following Compiler Flags: 
+
+```makefile
+-DSTM32x -DPINSy
+```
+
+Where <kbd>X</kbd> is the MCU Name(e.g. <kbd>STM32F3xE</kbd>) and <kbd>Y</kbd> the Count of Pins. Currently you can select either <kbd>32</kbd>, <kbd>48</kbd> or <kbd>64</kbd>+ Pins. At this point, things need to be improved in future. Selection is neither granular enough nor correct in all cases. Also it´s incomplete for the Banks. However, if your MCU has <kbd>Banks A to H</kbd> you can just set it to <kbd>64 </kbd> and you are fine to go.
+
 The fast way:
 
 ```cpp
