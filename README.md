@@ -48,7 +48,26 @@ int main(){
 # What does it offer?
 
 1. <kbd>All AlternateFunctions</kbd>
+
 2. <kbd>All Output Modes</kbd>
+
 3. <kbd>All Input Modes</kbd>
-4. <kbd>Easy Output</kbd>
-5. <kbd>Easy Input</kbd>
+
+4. <kbd>setting Interrupts</kbd>
+
+5. <kbd>Easy Output</kbd>
+
+   ```cpp
+   //write a One
+   pa5->writePositive();
+   //write a Zero
+   pa5->writeNegative();
+   ```
+
+6. <kbd>Easy Input</kbd>
+
+   ```cpp
+   auto input = pa5->read();
+   ```
+
+   
