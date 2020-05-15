@@ -15,15 +15,15 @@ The fast way:
 #include "Library/GPIO/Pins.h"
 
 int main(){
-    //Replace PA5 with the desired Pin
-    PA5 pa5 = PA5::getInstance();
+    	//Replace PA5 with the desired Pin
+    	PA5 pa5 = PA5::getInstance();
 	pa5.setModeOutputOpenDrain();
 	pa5.setPullUp();
 	pa5.setSpeedFast();
 	pa5.init();
     
     
-    while(true);
+    	while(true);
 }
 ```
 
@@ -33,15 +33,15 @@ The better practice:
 #include "Library/GPIO/Pins.h"
 
 int main(){
-    //Replace PA5 with the desired Pin
-    PA5 *pa5 = &PA5::getInstance();
+   	//Replace PA5 with the desired Pin
+   	PA5 *pa5 = &PA5::getInstance();
 	pa5->setModeOutputOpenDrain();
 	pa5->setPullUp();
 	pa5->setSpeedFast();
 	pa5->init();
  
     
-    while(true);
+    	while(true);
 }
 ```
 
