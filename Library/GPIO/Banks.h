@@ -7,7 +7,7 @@
 
 #include "Internal/BankRelated/GPIOBankBasicImpl.h"
 
-#ifdef STM32F303xE
+#if defined(PINS64) || defined(PINS48) || defined(PINS32)
 
 class  GPIOBankA : public GPIOBankBasicImpl{
 protected:
@@ -51,6 +51,11 @@ public:
 	~GPIOBankB() final= default;
 };
 
+#endif
+
+
+#if defined(PINS64) || defined(PINS48)
+
 class  GPIOBankC : public GPIOBankBasicImpl{
 protected:
 	GPIOBankC() : GPIOBankBasicImpl(
@@ -71,6 +76,11 @@ public:
 	}
 	~GPIOBankC() final= default;
 };
+
+#endif
+
+
+#if defined(PINS64)
 
 class  GPIOBankD : public GPIOBankBasicImpl{
 protected:

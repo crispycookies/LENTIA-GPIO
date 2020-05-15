@@ -434,6 +434,10 @@ public:
 	~PB15() final= default;
 };
 
+#endif
+
+#if defined(PINS64) || defined(PINS48)
+
 class PC0: public PintableBasicImpl{
 protected:
 	PC0() : PintableBasicImpl(
@@ -647,9 +651,11 @@ public:
 	}
 	~PC15() final= default;
 };
+
 #endif
 
-#if defined(PINS64) || defined(PINS48)
+#if defined(PINS64)
+
 class PD0: public PintableBasicImpl{
 protected:
 	PD0() : PintableBasicImpl(
@@ -863,9 +869,7 @@ public:
 	}
 	~PD15() final= default;
 };
-#endif
 
-#if defined(PINS64)
 class PE0: public PintableBasicImpl{
 protected:
 	PE0() : PintableBasicImpl(
