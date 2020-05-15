@@ -45,3 +45,10 @@ int main(){
 }
 ```
 
+# What does it offer?
+
+1. <kbd>All AlternateFunctions</kbd>
+2. <kbd>All Output Modes</kbd>
+3. <kbd>All Input Modes</kbd>
+4. <kbd>Easy Output</kbd>
+5. <kbd>Easy Input</kbd>
