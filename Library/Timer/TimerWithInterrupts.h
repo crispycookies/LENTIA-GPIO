@@ -5,10 +5,10 @@
 #ifndef DRONE_TIMERWITHINTERRUPTS_H
 #define DRONE_TIMERWITHINTERRUPTS_H
 
-#include "../BasicTimer/BasicTimerWithInterruptBasicImpl.h"
-#include "../Interrupts/IRQs.h"
-#include "Timers.h"
-#include "TimerSynchronizationObjects.h"
+#include "Internal/BasicTimer/BasicTimerWithInterruptBasicImpl.h"
+#include "Internal/Interrupts/IRQs.h"
+#include "Internal/Timer/Timers.h"
+#include "Internal/Timer/TimerSynchronizationObjects.h"
 
 class TIM15_WithInterrupt : public BasicTimerWithInterruptBasicImpl{
 protected:
