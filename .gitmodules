@@ -1,6 +1,0 @@
-[submodule "Library/Timer"]
-	path = Library/Timer
-	url = https://github.com/crispycookies/LENTIA_Timer
-[submodule "Common/IRQs"]
-	path = Common/IRQs
-	url = https://github.com/crispycookies/LENTIA-IRQs.git
