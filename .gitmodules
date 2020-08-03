@@ -1,0 +1,3 @@
+[submodule "Library/Timer"]
+	path = Library/Timer
+	url = https://github.com/crispycookies/LENTIA_Timer
